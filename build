@@ -1,0 +1,4 @@
+gcc -Wall -I. -I../lua-5.2.1/src/ -pedantic -fpic -std=c99 -c luapng.c
+gcc -shared -o luapng.so luapng.o -lpng
+rm luapng.o
+
